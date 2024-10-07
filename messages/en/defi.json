@@ -1,0 +1,14 @@
+{
+  "defi": {
+    "title": "DeFi",
+    "description": "elSOL can be used across various Solana DeFi protocols.",
+    "TokenSwapRow": {
+      "title": "Token Swap",
+      "description": "Unlike traditional staking, elSOL has no lock-up period and can be swapped for other tokens such as SOL or USDC at any time. This allows you to earn staking rewards while managing your assets with greater flexibility."
+    },
+    "LiquidityPoolRow": {
+      "title": "Liquidity Pool",
+      "description": "While earning staking rewards, elSOL can also be provided to liquidity pools for additional yield. This allows you to efficiently grow your assets through DeFi protocols."
+    }
+  }
+}

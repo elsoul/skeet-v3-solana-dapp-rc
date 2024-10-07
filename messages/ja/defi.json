@@ -1,0 +1,14 @@
+{
+  "defi": {
+    "title": "DeFi",
+    "description": "elSOL は様々な Solana DeFi プロトコルにてご利用いただけます。",
+    "TokenSwapRow": {
+      "title": "Token Swap",
+      "description": "elSOLには通常のステーキングとは違いロック期間がなく、いつでもSOLやUSDC等のトークンと交換することが可能です。これにより、ステーキング報酬を受け取りつつ、必要に応じて資産を柔軟に運用できます。"
+    },
+    "LiquidityPoolRow": {
+      "title": "Liquidity Pool",
+      "description": "elSOLはステーキング報酬を獲得しながら、さらに流動性プールに提供することで追加の利回りを得ることが可能です。DeFiプロトコルを通じて資産を効率的に増やす手段として活用できます。"
+    }
+  }
+}

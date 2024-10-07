@@ -1,0 +1,13 @@
+{
+  "(home)": {
+    "title": "ホーム",
+    "HomeHeroRow": {
+      "title1": "The Complete",
+      "title2": "Web Framework",
+      "title3": "for Modern Developers",
+      "subtitle1": "現在 v3 リリースに向けて開発中",
+      "subtitle2": "こちらは RC バージョンのデモです",
+      "button": "Solana Blinks を試す"
+    }
+  }
+}
