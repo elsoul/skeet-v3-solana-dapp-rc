@@ -16,6 +16,7 @@
     "aiChat": "AIチャット",
     "githubRepo": "GitHub リポ",
     "priceDataFromCoingecko": "※ 価格データは CoinGecko より取得",
+    "connectYourWallet": "ウォレットを接続してください",
     "CTARow": {
       "title": "Discord コミュニティに参加しましょう",
       "body": "最新のアップデート、ニュース、限定情報等を公式 Discord サーバーでチェックしてください。",
