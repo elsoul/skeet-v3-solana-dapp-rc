@@ -27,7 +27,10 @@ export default function SolanaWalletProvider({ children }: Props) {
 
   const onError = useCallback(
     (error: WalletError) => {
-      if (!error.message.includes('user rejected the request.')) {
+      if (
+        !error.message.includes('user rejected the request.') &&
+        !error.message.includes('User rejected the request.')
+      ) {
         toast({
           title: error.name,
           description: error.message,
@@ -42,7 +45,10 @@ export default function SolanaWalletProvider({ children }: Props) {
     async (adapter: Adapter) => {
       adapter.autoConnect().catch(async (e) => {
         if (e instanceof Error) {
-          if (!e.message.includes('user rejected the request.')) {
+          if (
+            !e.message.includes('user rejected the request.') &&
+            !e.message.includes('User rejected the request.')
+          ) {
             toast({
               title: e.name,
               description: e.message,
