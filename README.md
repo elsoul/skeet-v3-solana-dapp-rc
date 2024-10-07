@@ -122,7 +122,7 @@ You can also use [v0](https://v0.dev/) which is a UI generator with shadcn/ui fr
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/elsoul/skeet-v3-next-ssg-rc This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/elsoul/skeet This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
