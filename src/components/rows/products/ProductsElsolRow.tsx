@@ -33,7 +33,7 @@ export default function ProductsElsolRow() {
           <h2
             className={cn(
               'py-2 text-3xl font-extrabold tracking-tighter sm:text-4xl',
-              mainShardGradation,
+              mainShardGradation
             )}
           >
             {t('common.ProductsElsolRow.title')}

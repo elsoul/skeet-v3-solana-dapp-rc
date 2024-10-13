@@ -1,7 +1,7 @@
 import {
   OPOSDeveloperToolkit,
   SolanaLogoHorizontal,
-  SolanaLogoInvertHorizontal,
+  SolanaLogoInvertHorizontal
 } from '@/assets/img'
 import { Card } from '@/components/ui/card'
 import { mainShardGradation } from '@/lib/decoration'
@@ -21,7 +21,7 @@ export default function ConnectYourWalletCard() {
           <p
             className={cn(
               'pt-6 text-center text-xl font-bold tracking-tight sm:text-2xl md:text-3xl lg:text-4xl',
-              mainShardGradation,
+              mainShardGradation
             )}
           >
             {t('common.connectYourWallet')}

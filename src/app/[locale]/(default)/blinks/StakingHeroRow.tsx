@@ -3,7 +3,7 @@
 import {
   elSOLAngledRight,
   SolanaFoundationLogoHorizontal,
-  SolanaFoundationLogoInvertHorizontal,
+  SolanaFoundationLogoInvertHorizontal
 } from '@/assets/img'
 import { Button } from '@/components/ui/button'
 import { mainShardGradation } from '@/lib/decoration'
@@ -21,8 +21,8 @@ const logos = [
     title: 'SolanaFoundation',
     logo: SolanaFoundationLogoHorizontal,
     logoInvert: SolanaFoundationLogoInvertHorizontal,
-    href: SOLANA_FOUNDATION_STAKE_POOL_LINK,
-  },
+    href: SOLANA_FOUNDATION_STAKE_POOL_LINK
+  }
 ]
 
 export default function StakingHeroRow() {
@@ -49,7 +49,7 @@ export default function StakingHeroRow() {
             <h2
               className={cn(
                 'py-2 text-5xl font-bold tracking-tighter sm:text-7xl lg:text-8xl',
-                mainShardGradation,
+                mainShardGradation
               )}
             >
               {t('staking.StakingHeroRow.title1')} <br />
@@ -58,7 +58,7 @@ export default function StakingHeroRow() {
             <p
               className={cn(
                 'max-w-96 text-sm font-medium sm:max-w-lg sm:text-lg lg:-mt-2 lg:max-w-xl lg:text-xl',
-                'text-zinc-500 dark:text-zinc-300',
+                'text-zinc-500 dark:text-zinc-300'
               )}
             >
               {t('staking.StakingHeroRow.subtitle1')} <br />

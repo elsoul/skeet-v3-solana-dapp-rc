@@ -3,7 +3,7 @@
 import {
   elSOLAngledRight,
   OrcaLogoHorizontal,
-  OrcaLogoInvertHorizontal,
+  OrcaLogoInvertHorizontal
 } from '@/assets/img'
 import { mainShardGradation } from '@/lib/decoration'
 import { cn } from '@/lib/utils'
@@ -20,8 +20,8 @@ const logos = [
     title: 'Orca',
     logo: OrcaLogoHorizontal,
     logoInvert: OrcaLogoInvertHorizontal,
-    href: ELSOL_LP_ORCA_LINK,
-  },
+    href: ELSOL_LP_ORCA_LINK
+  }
 ]
 
 export default function InstantLiquidityRow() {
@@ -48,7 +48,7 @@ export default function InstantLiquidityRow() {
             <h2
               className={cn(
                 'py-2 text-5xl font-bold tracking-tighter sm:text-7xl lg:text-8xl',
-                mainShardGradation,
+                mainShardGradation
               )}
             >
               {t('common.InstantLiquidityRow.title1')} <br />
@@ -57,7 +57,7 @@ export default function InstantLiquidityRow() {
             <p
               className={cn(
                 'max-w-96 text-sm font-medium sm:max-w-lg sm:text-lg lg:max-w-xl lg:text-xl',
-                'text-zinc-500 dark:text-zinc-300',
+                'text-zinc-500 dark:text-zinc-300'
               )}
             >
               {t('common.InstantLiquidityRow.body')}

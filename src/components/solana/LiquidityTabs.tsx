@@ -46,7 +46,7 @@ export default function LiquidityTabs() {
         const balance = await connection.getBalance(publicKey)
         const tokenAccounts = await connection.getParsedTokenAccountsByOwner(
           publicKey,
-          { mint: new PublicKey(ELSOL_TOKEN_MINT) },
+          { mint: new PublicKey(ELSOL_TOKEN_MINT) }
         )
         let tokenBalance = 0
         tokenAccounts.value.forEach((tokenAccount) => {
@@ -140,7 +140,7 @@ export default function LiquidityTabs() {
                     isUpdating ? 'animate-spin' : '',
                     isDisabled
                       ? 'cursor-not-allowed text-gray-400'
-                      : 'hover:opacity-70',
+                      : 'hover:opacity-70'
                   )}
                 >
                   <UpdateIcon className="h-5 w-5" />

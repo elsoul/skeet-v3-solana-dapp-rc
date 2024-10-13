@@ -3,6 +3,8 @@
 import {
   CloudFlareLogoHorizontal,
   CloudFlareLogoInvertHorizontal,
+  DenoLogoHorizontal,
+  DenoLogoInvertHorizontal,
   ExpoLogoHorizontal,
   ExpoLogoInvertHorizontal,
   NeonLogoHorizontal,
@@ -14,8 +16,7 @@ import {
   PrismaLogoHorizontal,
   PrismaLogoInvertHorizontal,
   SolanaLogoHorizontal,
-  SolanaLogoInvertHorizontal,
-  TypeScriptLogoHorizontal,
+  SolanaLogoInvertHorizontal
 } from '@/assets/img'
 import { Button } from '@/components/ui/button'
 import appInfo from '@appInfo'
@@ -36,44 +37,44 @@ const logos = [
     title: 'CloudFlare',
     logo: CloudFlareLogoHorizontal,
     logoInvert: CloudFlareLogoInvertHorizontal,
-    href: 'https://cloudflare.com/',
+    href: 'https://cloudflare.com/'
+  },
+  {
+    title: 'Deno',
+    logo: DenoLogoHorizontal,
+    logoInvert: DenoLogoInvertHorizontal,
+    href: 'https://deno.com/'
   },
   {
     title: 'Neon',
     logo: NeonLogoHorizontal,
     logoInvert: NeonLogoInvertHorizontal,
-    href: 'https://neon.tech/',
-  },
-  {
-    title: 'TypeScript',
-    logo: TypeScriptLogoHorizontal,
-    logoInvert: TypeScriptLogoHorizontal,
-    href: 'https://typescriptlang.org/',
+    href: 'https://neon.tech/'
   },
   {
     title: 'Prisma',
     logo: PrismaLogoHorizontal,
     logoInvert: PrismaLogoInvertHorizontal,
-    href: 'https://prisma.io/',
+    href: 'https://prisma.io/'
   },
   {
     title: 'Solana',
     logo: SolanaLogoHorizontal,
     logoInvert: SolanaLogoInvertHorizontal,
-    href: 'https://solana.com/',
+    href: 'https://solana.com/'
   },
   {
     title: 'Next',
     logo: NextLogoHorizontal,
     logoInvert: NextLogoInvertHorizontal,
-    href: 'https://nextjs.org/',
+    href: 'https://nextjs.org/'
   },
   {
     title: 'Expo',
     logo: ExpoLogoHorizontal,
     logoInvert: ExpoLogoInvertHorizontal,
-    href: 'https://expo.dev/',
-  },
+    href: 'https://expo.dev/'
+  }
 ]
 
 export default function HomeHeroRow() {
@@ -110,7 +111,7 @@ export default function HomeHeroRow() {
           <h1
             className={cn(
               'py-2 text-center text-4xl font-bold tracking-tighter sm:text-7xl lg:text-7xl',
-              mainShardGradation,
+              mainShardGradation
             )}
           >
             {t('(home).HomeHeroRow.title1')} <br />
@@ -120,7 +121,7 @@ export default function HomeHeroRow() {
           <p
             className={cn(
               '-mt-4 max-w-96 text-center text-sm font-medium sm:max-w-lg sm:text-lg lg:-mt-2 lg:max-w-xl lg:text-xl',
-              'text-zinc-500 dark:text-zinc-300',
+              'text-zinc-500 dark:text-zinc-300'
             )}
           >
             {t('(home).HomeHeroRow.subtitle1')} <br />

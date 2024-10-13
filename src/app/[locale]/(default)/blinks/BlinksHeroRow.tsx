@@ -4,7 +4,7 @@ import {
   OPOSCompressedCoil,
   SolanaBlinksImg,
   SolanaLogoHorizontal,
-  SolanaLogoInvertHorizontal,
+  SolanaLogoInvertHorizontal
 } from '@/assets/img'
 import { mainShardGradation } from '@/lib/decoration'
 import { cn } from '@/lib/utils'
@@ -18,8 +18,8 @@ const logos = [
     title: 'Solana',
     logo: SolanaLogoHorizontal,
     logoInvert: SolanaLogoInvertHorizontal,
-    href: 'https://solana.com/solutions/actions',
-  },
+    href: 'https://solana.com/solutions/actions'
+  }
 ]
 
 export default function BlinksHeroRow() {
@@ -46,7 +46,7 @@ export default function BlinksHeroRow() {
             <h2
               className={cn(
                 'py-2 text-5xl font-bold tracking-tighter sm:text-7xl lg:text-8xl',
-                mainShardGradation,
+                mainShardGradation
               )}
             >
               {t('blinks.title')}
@@ -54,7 +54,7 @@ export default function BlinksHeroRow() {
             <p
               className={cn(
                 'max-w-96 text-lg font-medium tracking-tight sm:max-w-lg sm:text-xl lg:-mt-2 lg:max-w-xl lg:text-2xl',
-                'text-zinc-500 dark:text-zinc-300',
+                'text-zinc-500 dark:text-zinc-300'
               )}
             >
               {t('blinks.description')}

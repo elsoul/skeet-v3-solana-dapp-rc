@@ -18,6 +18,8 @@ import SolanaFoundationLogoHorizontal from '@/assets/img/logo/partners/SolanaFou
 import SolanaFoundationLogoInvertHorizontal from '@/assets/img/logo/partners/SolanaFoundationLogoInvertHorizontal.svg'
 import OrcaLogoHorizontal from '@/assets/img/logo/partners/OrcaLogoHorizontal.svg'
 import OrcaLogoInvertHorizontal from '@/assets/img/logo/partners/OrcaLogoInvertHorizontal.svg'
+import DenoLogoHorizontal from '@/assets/img/logo/partners/DenoLogoHorizontal.svg'
+import DenoLogoInvertHorizontal from '@/assets/img/logo/partners/DenoLogoInvertHorizontal.svg'
 
 import elSOLcoin from '@/assets/img/coin/elSOLcoin.png'
 import elSOLcoins from '@/assets/img/coin/elSOLcoins.png'
@@ -73,6 +75,8 @@ export {
   SolanaFoundationLogoInvertHorizontal,
   OrcaLogoHorizontal,
   OrcaLogoInvertHorizontal,
+  DenoLogoHorizontal,
+  DenoLogoInvertHorizontal,
   elSOLcoin,
   elSOLcoins,
   elSOLAngledLeft,
@@ -101,5 +105,5 @@ export {
   SolvProductImg,
   ValidatrosSolutionsProductImg,
   ERPCProductImg,
-  SolanaBlinksImg,
+  SolanaBlinksImg
 }

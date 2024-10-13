@@ -27,6 +27,7 @@ Demo: https://solana-dapp.skeeter.dev/
 
 ## Features
 
+- Edge-Native
 - Static Site Generation
 - i18n Native
 - Next.js App Router
@@ -42,14 +43,12 @@ Demo: https://solana-dapp.skeeter.dev/
 
 ## Built with
 
+- [Deno](https://deno.com/)
 - [Next.js](https://nextjs.org/)
 - [Cloudflare Pages](https://pages.cloudflare.com/)
 - [Wrangler](https://developers.cloudflare.com/workers/wrangler/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
-- [ESLint](https://eslint.org/)
-- [Prettier](https://prettier.io/)
-- [pnpm](https://pnpm.io/)
 - [next-intl](https://next-intl-docs.vercel.app/)
 - [React Compiler](https://react.dev/learn/react-compiler)
 - [shadcn/ui](https://ui.shadcn.com/)
@@ -63,8 +62,8 @@ Demo: https://solana-dapp.skeeter.dev/
 First, run the development server:
 
 ```bash
-pnpm i
-pnpm dev
+deno i
+deno task dev
 ```
 
 Open [http://localhost:4242](http://localhost:4242) with your browser to see the result.
@@ -101,16 +100,11 @@ For example:
 
 You can add the high-quality UI components from [shadcn/ui](https://ui.shadcn.com/)
 
-```bash
-// shortcut method for shadcn/ui
-pnpm add:ui button
-```
-
-You can also use [v0](https://v0.dev/) which is a UI generator with shadcn/ui from simple text prompts and images.
-
 <a href="https://v0.dev/">
   <img src="https://storage.skeet.dev/v0.jpg" alt="v0" />
 </a>
+
+You can also use [v0](https://v0.dev/) which is a UI generator with shadcn/ui from simple text prompts and images.
 
 ## References
 
