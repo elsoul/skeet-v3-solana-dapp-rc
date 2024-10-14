@@ -12,10 +12,7 @@ import { useEffect, useState } from 'react'
 import { LAMPORTS_PER_SOL, PublicKey } from '@solana/web3.js'
 import { ELSOL_TOKEN_MINT } from '@/constants/address'
 import { UpdateIcon } from '@radix-ui/react-icons'
-import { Button } from '@/components/ui/button'
 import OpenOrcaPositionBlinks from './OpenOrcaPositionBlinks'
-import { ELSOL_LP_ORCA_LINK } from '@/constants/links'
-import { Link } from '@/navigation'
 import CloseOrcaPositionBlinks from './CloseOrcaPositionBlinks'
 
 export default function LiquidityTabs() {
@@ -23,7 +20,7 @@ export default function LiquidityTabs() {
   const { publicKey } = useWallet()
   const { connection } = useConnection()
 
-  const [tabValue, setTabValue] = useState('openOrca')
+  const [tabValue, setTabValue] = useState('SOL')
 
   const [solBalance, setSolBalance] = useState(0)
   const [elsolBalance, setElsolBalance] = useState(0)
@@ -46,7 +43,7 @@ export default function LiquidityTabs() {
         const balance = await connection.getBalance(publicKey)
         const tokenAccounts = await connection.getParsedTokenAccountsByOwner(
           publicKey,
-          { mint: new PublicKey(ELSOL_TOKEN_MINT) }
+          { mint: new PublicKey(ELSOL_TOKEN_MINT) },
         )
         let tokenBalance = 0
         tokenAccounts.value.forEach((tokenAccount) => {
@@ -94,16 +91,31 @@ export default function LiquidityTabs() {
     <>
       <div className="grid gap-6">
         <Tabs value={tabValue} onValueChange={setTabValue} className="w-full">
-          <TabsList className="mb-7 grid w-full grid-cols-2">
-            <TabsTrigger value="openOrca">
-              {t('common.InstantLiquidityRow.openOrca')}
-            </TabsTrigger>
+          <TabsList className="mb-7 grid w-full grid-cols-4">
+            <TabsTrigger value="SOL">SOL</TabsTrigger>
+            <TabsTrigger value="USDC">USDC</TabsTrigger>
+            <TabsTrigger value="EPCT">EPCT</TabsTrigger>
             <TabsTrigger value="closeOrca">
               {t('common.InstantLiquidityRow.closeOrca')}
             </TabsTrigger>
           </TabsList>
-          <TabsContent value="openOrca">
-            <OpenOrcaPositionBlinks updateCounter={updateCounter} />
+          <TabsContent value="SOL">
+            <OpenOrcaPositionBlinks
+              updateCounter={updateCounter}
+              symbol={'SOL'}
+            />
+          </TabsContent>
+          <TabsContent value="USDC">
+            <OpenOrcaPositionBlinks
+              updateCounter={updateCounter}
+              symbol={'USDC'}
+            />
+          </TabsContent>
+          <TabsContent value="EPCT">
+            <OpenOrcaPositionBlinks
+              updateCounter={updateCounter}
+              symbol={'EPCT'}
+            />
           </TabsContent>
           <TabsContent value="closeOrca">
             <CloseOrcaPositionBlinks updateCounter={updateCounter} />
@@ -140,7 +152,7 @@ export default function LiquidityTabs() {
                     isUpdating ? 'animate-spin' : '',
                     isDisabled
                       ? 'cursor-not-allowed text-gray-400'
-                      : 'hover:opacity-70'
+                      : 'hover:opacity-70',
                   )}
                 >
                   <UpdateIcon className="h-5 w-5" />

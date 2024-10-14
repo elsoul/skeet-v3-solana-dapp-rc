@@ -12,13 +12,17 @@ import { VALIDATORS_BLINKS_BASE_URL } from '@/constants/links'
 
 type Props = {
   updateCounter: number
+  symbol: string
 }
 
-export default function OpenOrcaPositionBlinks({ updateCounter }: Props) {
+export default function OpenOrcaPositionBlinks({
+  updateCounter,
+  symbol,
+}: Props) {
   const { publicKey } = useWallet()
   const { adapter } = useActionSolanaWalletAdapter(solanaEndpoint)
   const { action } = useAction({
-    url: `${VALIDATORS_BLINKS_BASE_URL}/v1/whirlpool`,
+    url: `${VALIDATORS_BLINKS_BASE_URL}/v1/whirlpool?symbol=${symbol}`,
     adapter,
   })
   const { theme } = useTheme()

@@ -33,8 +33,7 @@
     "InstantLiquidityRow": {
       "title1": "Boost Your Rewards",
       "title2": "with Instant Liquidity.",
-      "body": "elSOLは保有しているだけでステーキング報酬を得られますが、Orcaの流動性プールに追加することで、さらに報酬を獲得するチャンスが広がります。難しい設定は不要で、インスタントに流動性を提供でき、すぐにトレード手数料報酬の獲得を開始できます。",
-      "openOrca": "流動性を追加",
+      "body": "elSOLを保有するだけでステーキング報酬が得られますが、Orcaの流動性プールに追加することで、さらなる報酬獲得のチャンスが広がります。設定は不要で、インスタントに流動性を提供し、すぐにトレード手数料の報酬を開始できます。新技術『Bundle Position』を採用し、従来のPosition NFTをミントする方法に比べて、約70%の手数料削減を実現しました。",
       "closeOrca": "報酬を獲得"
     },
     "ProductsSolvRow": {
