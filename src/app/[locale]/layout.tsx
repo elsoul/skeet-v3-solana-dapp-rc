@@ -44,7 +44,11 @@ export default async function LocaleLayout({
         className={cn(`${inter.variable} ${notoSansJP.variable}`)}
         suppressHydrationWarning
       >
-        <ThemeProvider attribute="class" defaultTheme="dark">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem={false}
+        >
           <NextIntlClientProvider messages={messages}>
             <SolanaWalletProvider>{children}</SolanaWalletProvider>
             <Toaster />
