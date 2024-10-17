@@ -8,12 +8,13 @@ import { mainShardGradation } from '@/lib/decoration'
 import { cn } from '@/lib/utils'
 import { WalletMultiButton } from '@solana/wallet-adapter-react-ui'
 import { useTranslations } from 'next-intl'
-import { useTheme } from 'next-themes'
+import { useTheme } from '@/hooks/utils/useTheme'
 import Image from 'next/image'
 
 export default function ConnectYourWalletCard() {
   const t = useTranslations()
-  const { theme } = useTheme()
+  const { theme, mounted } = useTheme()
+  if (!mounted) return null
   return (
     <>
       <Card className="grid w-full gap-5 p-4">

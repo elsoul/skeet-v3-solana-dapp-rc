@@ -12,7 +12,7 @@ import { Link } from '@/navigation'
 import { useLocale, useTranslations } from 'next-intl'
 import Image from 'next/image'
 import { DEFAULT_PATHS } from '../defaultNavs'
-import { useTheme } from 'next-themes'
+import { useTheme } from '@/hooks/utils/useTheme'
 import { SOLANA_FOUNDATION_STAKE_POOL_LINK } from '@/constants/links'
 import StakingTabs from './StakingTabs'
 
@@ -28,7 +28,8 @@ const logos = [
 export default function StakingHeroRow() {
   const t = useTranslations()
   const locale = useLocale()
-  const { theme } = useTheme()
+  const { theme, mounted } = useTheme()
+  if (!mounted) return null
 
   return (
     <>

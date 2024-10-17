@@ -2,6 +2,7 @@ import { Inter, Noto_Sans_JP } from 'next/font/google'
 import { unstable_setRequestLocale, getMessages } from 'next-intl/server'
 import { NextIntlClientProvider } from 'next-intl'
 import '../globals.css'
+import '@dialectlabs/blinks/index.css'
 import { ThemeProvider } from '@/components/providers/ThemeProvider'
 import { cn } from '@/lib/utils'
 import { Toaster } from '@/components/ui/toaster'
@@ -11,13 +12,13 @@ import SolanaWalletProvider from '@/components/providers/SolanaWalletProvider'
 const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-inter',
+  variable: '--font-inter'
 })
 
 const notoSansJP = Noto_Sans_JP({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-noto-sans-jp',
+  variable: '--font-noto-sans-jp'
 })
 
 type Props = {
@@ -33,7 +34,7 @@ export function generateStaticParams() {
 
 export default async function LocaleLayout({
   children,
-  params: { locale },
+  params: { locale }
 }: Props) {
   unstable_setRequestLocale(locale)
   const messages = await getMessages({ locale })

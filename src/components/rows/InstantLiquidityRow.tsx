@@ -11,7 +11,7 @@ import { Link } from '@/navigation'
 import { useLocale, useTranslations } from 'next-intl'
 import Image from 'next/image'
 
-import { useTheme } from 'next-themes'
+import { useTheme } from '@/hooks/utils/useTheme'
 import { ELSOL_LP_ORCA_LINK } from '@/constants/links'
 import LiquidityTabs from '@/components/solana/LiquidityTabs'
 
@@ -27,7 +27,8 @@ const logos = [
 export default function InstantLiquidityRow() {
   const t = useTranslations()
   const locale = useLocale()
-  const { theme } = useTheme()
+  const { theme, mounted } = useTheme()
+  if (!mounted) return null
 
   return (
     <>

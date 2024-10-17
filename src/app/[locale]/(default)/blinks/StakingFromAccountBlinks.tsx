@@ -1,10 +1,9 @@
 'use client'
 
-import '@dialectlabs/blinks/index.css'
 import { Blink, useAction } from '@dialectlabs/blinks'
 import { useActionSolanaWalletAdapter } from '@dialectlabs/blinks/hooks/solana'
 import { solanaEndpoint } from '@/components/providers/SolanaWalletProvider'
-import { useTheme } from 'next-themes'
+import { useTheme } from '@/hooks/utils/useTheme'
 import { useWallet } from '@solana/wallet-adapter-react'
 import ConnectYourWalletCard from '@/components/common/ConnectYourWalletCard'
 import { Skeleton } from '@/components/ui/skeleton'
@@ -19,9 +18,10 @@ export default function StakingFromAccountBlinks({ updateCounter }: Props) {
   const { adapter } = useActionSolanaWalletAdapter(solanaEndpoint)
   const { action } = useAction({
     url: `${VALIDATORS_BLINKS_BASE_URL}/v1/stake/active?pubkey=${publicKey}`,
-    adapter,
+    adapter
   })
-  const { theme } = useTheme()
+  const { theme, mounted } = useTheme()
+  if (!mounted) return null
 
   return (
     <>
