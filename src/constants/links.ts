@@ -19,3 +19,6 @@ export const VALIDATORS_DAO_LINK = 'https://dao.validators.solutions/'
 
 export const VALIDATORS_BLINKS_BASE_URL =
   'https://dial.to/?action=solana-action:https://blinks.validators.solutions'
+
+export const SOLANA_VALIDATOR_LINK =
+  'https://docs.solanalabs.com/operations/requirements'

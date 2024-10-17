@@ -5,21 +5,23 @@ import { useActionSolanaWalletAdapter } from '@dialectlabs/blinks/hooks/solana'
 import { solanaEndpoint } from '@/components/providers/SolanaWalletProvider'
 import { useTheme } from '@/hooks/utils/useTheme'
 import { useWallet } from '@solana/wallet-adapter-react'
-import ConnectYourWalletCard from '@/components/common/ConnectYourWalletCard'
+import ConnectYourWalletCard from '@/components/solana/ConnectYourWalletCard'
 import { Skeleton } from '@/components/ui/skeleton'
-import { VALIDATORS_BLINKS_BASE_URL } from '@/constants/links'
+import { useAtom } from 'jotai'
+import { solanaBalanceAtom } from '@/store/solana'
 
 type Props = {
-  updateCounter: number
+  actionUrl: string
 }
 
-export default function StakingBlinks({ updateCounter }: Props) {
+export default function BlinksComponent({ actionUrl }: Props) {
   const { publicKey } = useWallet()
   const { adapter } = useActionSolanaWalletAdapter(solanaEndpoint)
   const { action } = useAction({
-    url: `${VALIDATORS_BLINKS_BASE_URL}/v1/stake`,
+    url: actionUrl,
     adapter
   })
+  const [solanaBalance] = useAtom(solanaBalanceAtom)
   const { theme, mounted } = useTheme()
   if (!mounted) return null
 
@@ -29,7 +31,7 @@ export default function StakingBlinks({ updateCounter }: Props) {
         <>
           {action ? (
             <Blink
-              key={updateCounter}
+              key={solanaBalance.updated}
               action={action}
               stylePreset={theme === 'light' ? 'x-light' : 'x-dark'}
             />

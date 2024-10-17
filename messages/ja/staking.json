@@ -17,6 +17,12 @@
       "title2": "Additional Incentives",
       "subtitle1": "SOLをelSOLプール(Solana Foundation 公式の Stake Pool Program で作成)にステークし、ステーキング報酬と追加インセンティブを獲得しましょう。",
       "subtitle2": "elSOL ホルダーとして、Solanaブロックチェーンの分散化とセキュリティ向上に貢献できます。"
+    },
+    "DirectStakingRow": {
+      "title1": "Stake SOL",
+      "title2": "for Max TrueAPY",
+      "subtitle1": "Solana ネットワークの分散化とセキュリティ強化のため、私たちは常に高性能かつハイスコアのバリデータをノーダウンタイムで運用・アップデートしています。",
+      "subtitle2": "ダウンタイムを最小化し、最適なエリアで運用することで、より高いリターンを追求します。すべての手数料は 0% に設定されており、Solana バリデータ最大の TrueAPY を実現しています。"
     }
   }
 }
