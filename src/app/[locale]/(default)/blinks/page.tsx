@@ -13,6 +13,7 @@ import StakingHeroRow from './StakingHeroRow'
 import ElsolMetricsRow from '@/components/rows/ElsolMetricsRow'
 import InstantLiquidityRow from '@/components/rows/InstantLiquidityRow'
 import DirectStakingRow from './DirectStakingRow'
+import VLDAirdropRow from '@/components/rows/VLDAirdropRow'
 
 const { generateMetadata } = getDataForPageByFilename(__filename)
 export { generateMetadata }
@@ -41,6 +42,7 @@ export default function BlinksPage({ params: { locale } }: PageProps) {
       <Why1SOLnot1elSOLRow />
       <InstantLiquidityRow />
       <HavingLiquidityRow />
+      <VLDAirdropRow />
       <CTARow />
       <ProductsSlideRow />
     </>

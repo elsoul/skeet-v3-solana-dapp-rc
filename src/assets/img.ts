@@ -1,5 +1,7 @@
 import logoHorizontal from '@/assets/img/logo/SkeetLogoHorizontal.svg'
 import logoHorizontalInvert from '@/assets/img/logo/SkeetLogoInvertHorizontal.svg'
+import ValidatorsDAOLogoHorizontal from '@/assets/img/logo/ValidatorsDAOLogoHorizontal.svg'
+import ValidatorsDAOLogoInvertHorizontal from '@/assets/img/logo/ValidatorsDAOLogoInvertHorizontal.svg'
 
 import CloudFlareLogoHorizontal from '@/assets/img/logo/partners/CloudFlareLogoHorizontal.svg'
 import CloudFlareLogoInvertHorizontal from '@/assets/img/logo/partners/CloudFlareLogoInvertHorizontal.svg'
@@ -54,10 +56,13 @@ import ValidatrosSolutionsProductImg from '@/assets/img/products/ValidatorsSolut
 import ERPCProductImg from '@/assets/img/products/ERPC.jpg'
 
 import SolanaBlinksImg from '@/assets/img/icon/solana/SolanaBlinks.webp'
+import VLDAirdropImg from '@/assets/img/icon/rows/VLDAirdrop.png'
 
 export {
   logoHorizontal,
   logoHorizontalInvert,
+  ValidatorsDAOLogoHorizontal,
+  ValidatorsDAOLogoInvertHorizontal,
   CloudFlareLogoHorizontal,
   CloudFlareLogoInvertHorizontal,
   SolanaLogoHorizontal,
@@ -105,5 +110,6 @@ export {
   SolvProductImg,
   ValidatrosSolutionsProductImg,
   ERPCProductImg,
-  SolanaBlinksImg
+  SolanaBlinksImg,
+  VLDAirdropImg
 }

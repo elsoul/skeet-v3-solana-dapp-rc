@@ -22,3 +22,8 @@ export const VALIDATORS_BLINKS_BASE_URL =
 
 export const SOLANA_VALIDATOR_LINK =
   'https://docs.solanalabs.com/operations/requirements'
+
+export const ELSOUL_DISCORD_INVITE_LINK = 'https://discord.gg/H2HeqRq54J'
+export const EPICS_DAO_DISCORD_INVITE_LINK = 'https://discord.gg/GmHYfyRamx'
+export const VALIDATORS_DAO_DISCORD_INVITE_LINK =
+  'https://discord.gg/C7ZQSrCkYR'
