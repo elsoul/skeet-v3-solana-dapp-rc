@@ -1,9 +1,9 @@
-import { unstable_setRequestLocale } from 'next-intl/server'
+import { setRequestLocale } from 'next-intl/server'
 import {
   ArticlePageProps,
   getDataForArticlePageByFilename,
   getArticleBySlug,
-  getArticleForIndex,
+  getArticleForIndex
 } from '@/lib/articles'
 import NewsMobileHeader from '../NewsMobileHeader'
 import ScrollSyncToc from '@/components/articles/ScrollSyncToc'
@@ -11,39 +11,36 @@ import { cn } from '@/lib/utils'
 import ArticleContents from '@/components/articles/ArticleContents'
 import Image from 'next/image'
 import { AspectRatio } from '@/components/ui/aspect-ratio'
-import { useTranslations } from 'next-intl'
 import ArticleIndex from '@/components/articles/ArticleIndex'
-import { usePagerData } from '@/hooks/articles/usePagerData'
 import ArticlePager from '@/components/articles/ArticlePager'
+import { getPagerData } from '@/lib/getPagerData'
 
 const { groupDir, generateMetadata, generateStaticParams, getArticlePaths } =
   getDataForArticlePageByFilename(__filename)
 export { generateMetadata, generateStaticParams }
 
-export default function NewsArticlePage({
-  params: { locale, slug },
-}: ArticlePageProps) {
-  unstable_setRequestLocale(locale)
-  const t = useTranslations()
+export default async function NewsArticlePage({ params }: ArticlePageProps) {
+  const { locale, slug } = await params
+  setRequestLocale(locale)
 
   const articleData = getArticleBySlug(
     slug,
     ['title', 'category', 'thumbnail', 'date', 'content'],
     groupDir,
-    locale,
+    locale
   )
 
   const articlesData = getArticleForIndex(
     groupDir,
     ['title', 'thumbnail', 'date'],
-    locale,
+    locale
   )
 
-  const pagerData = usePagerData({
+  const pagerData = getPagerData({
     slug,
     groupDir,
     locale,
-    articlePaths: getArticlePaths(),
+    articlePaths: getArticlePaths()
   })
 
   return (
@@ -88,7 +85,7 @@ export default function NewsArticlePage({
             <div
               className={cn(
                 'scrollbar-thumb-rounded-full scrollbar-track-rounded-full overflow-auto scrollbar-thin scrollbar-track-white scrollbar-thumb-zinc-300 dark:scrollbar-track-zinc-950 dark:scrollbar-thumb-zinc-600',
-                'hidden max-h-[calc(100vh-10rem)] md:sticky md:top-32 md:block',
+                'hidden max-h-[calc(100vh-10rem)] md:sticky md:top-32 md:block'
               )}
             >
               <ScrollSyncToc rawMarkdownBody={articleData.content as string} />
@@ -97,9 +94,6 @@ export default function NewsArticlePage({
         </div>
       </div>
       <div className="my-16">
-        <h2 className="my-6 px-3 text-center text-3xl font-bold tracking-tight">
-          {t('news.latestNews')}
-        </h2>
         <ArticleIndex articlesData={articlesData} showItemsNum={3} />
       </div>
     </>

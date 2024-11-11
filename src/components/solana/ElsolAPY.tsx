@@ -6,12 +6,12 @@ import {
   fetchAndParsePricesCsv,
   calcYield,
   getPriceRangeFromPeriod,
-  PERIOD,
+  PERIOD
 } from '@glitchful-dev/sol-apy-sdk'
 import { mainShardGradation } from '@/lib/decoration'
 import { cn } from '@/lib/utils'
 import { useTranslations } from 'next-intl'
-import { Link } from '@/navigation'
+import { Link } from '@/i18n/routing'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -23,7 +23,7 @@ export default function ElsolAPY() {
     const fetchAPY = async () => {
       try {
         const prices = await fetchAndParsePricesCsv(
-          'https://raw.githubusercontent.com/glitchful-dev/sol-stake-pool-apy/master/db/elSOL.csv',
+          'https://raw.githubusercontent.com/glitchful-dev/sol-stake-pool-apy/master/db/elSOL.csv'
         )
 
         const priceRange = getPriceRangeFromPeriod(prices, PERIOD.DAYS_30)
@@ -57,7 +57,7 @@ export default function ElsolAPY() {
             <p
               className={cn(
                 'flex flex-wrap items-end text-4xl font-bold tracking-tighter sm:text-5xl',
-                mainShardGradation,
+                mainShardGradation
               )}
             >
               {apy.toFixed(2)}

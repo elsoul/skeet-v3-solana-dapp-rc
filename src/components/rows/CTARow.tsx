@@ -1,4 +1,4 @@
-import { Link } from '@/navigation'
+import { Link } from '@/i18n/routing'
 import appInfo from '@appInfo'
 import { useTranslations } from 'next-intl'
 import { Button } from '@/components/ui/button'
@@ -16,7 +16,7 @@ export default function CTARow() {
           <h2
             className={cn(
               'py-2 text-5xl font-extrabold tracking-tighter sm:text-5xl',
-              mainShardGradation,
+              mainShardGradation
             )}
           >
             {t('common.CTARow.title')}

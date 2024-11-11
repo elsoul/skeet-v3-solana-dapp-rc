@@ -11,7 +11,7 @@ import { cn } from '@/lib/utils'
 import { useLocale, useTranslations } from 'next-intl'
 import Image from 'next/image'
 import { useTheme } from '@/hooks/utils/useTheme'
-import { Link } from '@/navigation'
+import { Link } from '@/i18n/routing'
 
 const logos = [
   {

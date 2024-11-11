@@ -7,7 +7,7 @@ import {
 } from '@/assets/img'
 import { mainShardGradation } from '@/lib/decoration'
 import { cn } from '@/lib/utils'
-import { Link } from '@/navigation'
+import { Link } from '@/i18n/routing'
 import { useLocale, useTranslations } from 'next-intl'
 import Image from 'next/image'
 
