@@ -7,6 +7,8 @@ thumbnail: /news/2024/11/15/ValidatorsSolutionsLaunchedEN.jpg
 
 ELSOUL LABO B.V. (Headquarters: Amsterdam, Netherlands, CEO: Fumitake Kawasaki) and Validators DAO are pleased to announce “Validators Solutions,” an automated service for managing Solana validators. With this service, users can easily participate in the Solana ecosystem, secure the network, and earn rewards automatically while reducing maintenance costs. This service is designed for a wide range of users, from beginners to professionals.
 
+Validators Solutions: https://validators.solutions/en
+
 ## What is a Validator?
 
 ![Validators Solutions What is a Validator?](/news/2024/11/15/ValidatorsSolutionsWhatIsValidatorEN.jpg)

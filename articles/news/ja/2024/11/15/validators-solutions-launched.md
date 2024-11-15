@@ -7,6 +7,8 @@ thumbnail: /news/2024/11/15/ValidatorsSolutionsLaunchedJA.jpg
 
 ELSOUL LABO B.V.（本社: オランダ・アムステルダム、代表取締役 CEO: 川崎文武）と Validators DAO は、Solana ネットワーク向けのバリデータ自動運用サービス「Validators Solutions」を発表いたします。このサービスを利用することで、ユーザーはSolanaエコシステムに簡便に参加し、ネットワークのセキュリティを維持しながら報酬を自動で獲得でき、メンテナンスコストも削減できます。初心者からプロまで幅広い層を対象にしたサービスです。
 
+Validators Solutions: https://validators.solutions/ja
+
 ## バリデータとは？
 
 ![Validators Solutions What is a Validator ?](/news/2024/11/15/ValidatorsSolutionsWhatIsValidatorJA.jpg)
