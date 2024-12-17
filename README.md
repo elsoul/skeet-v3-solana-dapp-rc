@@ -74,7 +74,7 @@ It's recommended to set your own Solana RPC endpoint, as the default mainnet end
 
 No worries, you can get free credit for a Solana RPC endpoint at ERPC - Enhanced Solana RPC.
 
-ERPC: https://erpc.validators.solutions
+ERPC: https://erpc.global
 
 Setting Example (.env.local):
 
